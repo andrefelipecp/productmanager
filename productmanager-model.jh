@@ -1,0 +1,33 @@
+application {
+  config {
+    baseName productmanager
+    packageName br.com.goodidea.jhipstercreator
+    serverPort 8092
+    authenticationType jwt
+    applicationType monolith
+    blueprints [dotnetcore]
+    buildTool maven
+    enableHibernateCache false
+    enableSwaggerCodegen false
+    enableTranslation false
+    nativeLanguage en
+    enableTranslation false
+    reactive false
+    searchEngine false
+    skipClient false
+    skipServer false
+    skipUserManagement false
+    websocket false
+  }
+  entities *
+}
+entity Produto {
+	nome String 	quantidade Integer 	valor Double
+}
+entity Categoria {
+	nome String
+}
+
+relationship OneToMany {
+	Categoria to Produto
+}

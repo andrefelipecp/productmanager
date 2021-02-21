@@ -1,0 +1,11 @@
+version: '2'
+services:
+  productmanager-app:
+    image: productmanager
+    depends_on:
+      - db
+    build:
+      context: ../
+      dockerfile: src/Productmanager/Dockerfile
+    ports:
+      - 80:80

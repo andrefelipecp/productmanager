@@ -1,0 +1,51 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "clientFramework": "angularX",
+    "serverPort": "8092",
+    "skipUserManagement": false,
+    "baseName": "productmanager",
+    "buildTool": "maven",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": false,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "packageName": "br.com.goodidea.jhipstercreator",
+    "packageFolder": "br/com/goodidea/jhipstercreator",
+    "applicationType": "monolith",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-dotnetcore",
+        "version": "2.1.0"
+      }
+    ],
+    "reactive": false,
+    "skipServer": false,
+    "jhipsterVersion": "6.10.5",
+    "creationTimestamp": 1613933340775,
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-dotnetcore",
+        "version": "2.1.0"
+      }
+    ]
+  },
+  "entities": ["Produto", "Categoria"]
+}
